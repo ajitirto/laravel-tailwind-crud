@@ -19,3 +19,7 @@ Route::get('/', function () {
 });
 
 Route::resource('post', PostController::class);
+
+Route::get('/home', function () {
+    return view('home');
+});
