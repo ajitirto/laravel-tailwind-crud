@@ -3,6 +3,6 @@ Laravel menggunakan tailwind
 - Membuat fitur CRUD sederhana
 belajar : Santrikoding.com
 
-Sedang menambah fitur
+ menambah fitur
 
--  laravel fortify
+- fitur fortify login
