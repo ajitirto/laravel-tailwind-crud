@@ -23,3 +23,6 @@ Route::resource('post', PostController::class);
 Route::get('/home', function () {
     return view('home');
 });
+Route::get('/forgot-password', function () {
+    return view('auth.password');
+});
