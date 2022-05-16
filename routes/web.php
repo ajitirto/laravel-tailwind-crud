@@ -14,9 +14,9 @@ use App\Http\Controllers\PostController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Route::resource('post', PostController::class);
 
@@ -26,3 +26,8 @@ Route::get('/home', function () {
 Route::get('/forgot-password', function () {
     return view('auth.password');
 });
+
+
+Route::livewire('/', 'live.index')->name('live.index');
+Route::livewire('/create', 'live.create')->name('live.create');
+Route::livewire('/edit/{id}', 'live.edit')->name('live.edit');
